@@ -40,16 +40,20 @@ Sphere 1.0 50 50
 3. The **uNoiseFreq** parameter is the frequency of the noise function, i.e., it multiplies what goes into the noise function.
 4. The **uNoiseAmp** parameter is the amplitude of the noise function, i.e., it multiplies the noise value.
 5. The effects of the **uNoiseAmp** and **uNoiseFreq** parameters should look something like this:
-![image](https://github.com/user-attachments/assets/fedfa6e7-04f9-4228-b130-c3d600b6c7f2)
-![image](https://github.com/user-attachments/assets/3a797d96-b5b2-485f-883f-91127006b9bd)
-uNoiseAmp
-![image](https://github.com/user-attachments/assets/0dd70a5f-e4ad-430b-acc4-3466118f612a)
-uNoiseFreq
-![image](https://github.com/user-attachments/assets/391e718b-f864-4893-87b7-322c8b933d91)
-uTol
 
-6. Do per-fragment lighting just as you did in Project #1.
-7. As we discussed in class, get a noise value by indexing into a noise texture. Use all 4 octaves available. Then use that value to alter the ds and dt values. Then use those new ds and dt values to determine the correct color to use.
+![image](https://github.com/user-attachments/assets/fedfa6e7-04f9-4228-b130-c3d600b6c7f2)
+
+### uNoiseAmp
+![image](https://github.com/user-attachments/assets/3a797d96-b5b2-485f-883f-91127006b9bd)
+
+### uNoiseFreq
+![image](https://github.com/user-attachments/assets/0dd70a5f-e4ad-430b-acc4-3466118f612a)
+
+### uTol
+![image](https://github.com/user-attachments/assets/391e718b-f864-4893-87b7-322c8b933d91)
+
+7. Do per-fragment lighting just as you did in Project #1.
+8. As we discussed in class, get a noise value by indexing into a noise texture. Use all 4 octaves available. Then use that value to alter the ds and dt values. Then use those new ds and dt values to determine the correct color to use.
 ```
 // get the noise from the 3D noise texture
 // look it up using (s,t,0.) if using 2D texture coords:
